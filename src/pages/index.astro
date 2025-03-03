@@ -1,9 +1,6 @@
 ---
 // Component Imports
-import Counter from '../components/Counter';
-const someProps = {
-	count: 0,
-};
+import Tateti from '../components/Tateti'
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
@@ -14,6 +11,7 @@ const someProps = {
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+    <title>Hello React in Astro!</title>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<style>
 			html,
@@ -28,9 +26,10 @@ const someProps = {
 	</head>
 	<body>
 		<main>
-			<Counter {...someProps} client:visible>
-				<h1>Hello, React!</h1>
-			</Counter>
+      <h1>Hello React!</h1>
+      <hr>
+      <Tateti client:visible></Tateti>
+      <hr>
 		</main>
 	</body>
 </html>
